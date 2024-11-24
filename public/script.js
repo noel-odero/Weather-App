@@ -31,16 +31,23 @@ searchBox.addListener('places_changed', () => {
 });
 
 console.log('this is script.js in action');
-
+const icon = new Skycons({ color: '#222' });
 const locationElt = document.querySelector('[data-location]');
 const statusElt = document.querySelector('[data-status]');
 const temperatureElt = document.querySelector('[data-temperature]');
 const precipitationElt = document.querySelector('[data-precipitation]');
 const windElt = document.querySelector('[data-wind]');
+icon.set('icon', 'clear-day');
+icon.play();
+
 
 function setWeatherData(data, place) {
+  console.log(data, "In setter function");
   locationElt.textContent = place;
   statusElt.textContent = data.weather.description;
   temperatureElt.textContent = data.main.temp;
   precipitationElt.textContent = data.main.humidity;
+  windElt.textContent = data.wind.speed;
+  icon.set('icon', data.weather.icon);
+  icon.play();
 }
