@@ -1,4 +1,19 @@
+
+const weatherMapping = {
+  "800": "CLEAR_DAY",
+  "801": "PARTLY_CLOUDY_DAY",
+  "802": "CLOUDY",
+  "803": "CLOUDY",
+  "804": "CLOUDY",
+  "300": "RAIN",
+  "500": "RAIN",
+  "600": "SNOW",
+  "701": "FOG",
+  "900": "WIND"
+};
+
 // select input form
+
 const searchElement = document.querySelector('[data-city-search]');
 // create seacrhBox generated from google places api
 const searchBox = new google.maps.places.SearchBox(searchElement);
@@ -42,12 +57,13 @@ icon.play();
 
 
 function setWeatherData(data, place) {
-  console.log(data, "In setter function");
+
+  const iconKey = data.weather[0].id;
   locationElt.textContent = place;
   statusElt.textContent = data.weather.description;
   temperatureElt.textContent = data.main.temp;
   precipitationElt.textContent = data.main.humidity;
   windElt.textContent = data.wind.speed;
-  icon.set('icon', data.weather.icon);
+  icon.set('icon', weatherMapping[iconKey]);
   icon.play();
 }
