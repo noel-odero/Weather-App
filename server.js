@@ -30,7 +30,7 @@ app.post('/weather', (req, res) => {
     })
     .catch((err) => console.log(`an unexpected error happened ${err}`));
   // this will send a json version of our data, back to the script.js
-  // console.log(req.body);
+
 });
 
 app.listen(port, () => {
