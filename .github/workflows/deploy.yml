@@ -30,7 +30,7 @@ jobs:
         with:
           host: ${{ secrets.WEB_01_IP_ADDRESS }}
           username: ${{ secrets.WEB_01_HOST }}
-          key: ${{ secrets.WEB_01_SSHKEY }}
+          key: ${{ secrets.WEB_01_PRIVATE_KEY }}
           script: |
             docker pull missnoel9/weather-app:latest
             docker stop weather-app || true
