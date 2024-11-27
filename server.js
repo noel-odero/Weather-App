@@ -10,7 +10,7 @@ const API_KEY = 'b172652aa01bef4790b21e6dc71262d4';
 const express = require('express');
 const axios = require('axios');
 // axios works similarly to fetch
-const port = 3000;
+const port = 8080;
 const app = express();
 
 app.use(express.json());
