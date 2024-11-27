@@ -35,4 +35,4 @@ jobs:
             sudo docker pull missnoel9/weather-app:latest
             sudo docker stop weather-app || true
             sudo docker rm weather-app || true
-            sudo docker run -d -p 8080:8080 --name weather-app missnoel9/weather-app:latest
+            sudo docker run -d -p 3000:3000 --name weather-app missnoel9/weather-app:latest
