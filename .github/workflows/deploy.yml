@@ -32,7 +32,7 @@ jobs:
           username: ${{ secrets.WEB_01_HOST }}
           key: ${{ secrets.WEB_01_PRIVATE_KEY }}
           script: |
-            docker pull missnoel9/weather-app:latest
-            docker stop weather-app || true
-            docker rm weather-app || true
-            docker run -d -p 8080:8080 --name weather-app missnoel9/weather-app:latest
+            sudo docker pull missnoel9/weather-app:latest
+            sudo docker stop weather-app || true
+            sudo docker rm weather-app || true
+            sudo docker run -d -p 8080:8080 --name weather-app missnoel9/weather-app:latest
