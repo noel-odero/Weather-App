@@ -34,5 +34,5 @@ app.post('/weather', (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`server started on port ${port}`);
+  console.log(`server is listening on ${port}`);
 });
