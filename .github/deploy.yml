@@ -20,7 +20,7 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           push: true
-          tags: missnoel9/weatherapp:latest
+          tags: missnoel9/weather-app:latest
 
 
 
