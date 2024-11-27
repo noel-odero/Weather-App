@@ -22,14 +22,17 @@ jobs:
           push: true
           tags: missnoel9/weather-app:latest
 
-      # - name: Deploy to web-01
-      #   uses: appleboy/ssh-action@v0.1.9
-      #   with:
-      #     host: ${{ secrets.AWS_EC2_IP_ADDRESS }}
-      #     username: ${{ secrets.AWS_HOST_USER }}
-      #     key: ${{ secrets.PRIVATE_KEY }}
-      #     script: |
-      #       sudo docker pull peldrige/clockbox:latest
-      #       sudo docker stop clockbox || true
-      #       sudo docker rm clockbox || true
-      #       sudo docker run -d --name clockbox -p 80:80 peldrige/clockbox:latest
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: SSH to Ubuntu Server and Deploy
+        uses: appleboy/ssh-action@v0.1.6
+        with:
+          host: ${{ secrets.WEB_01_IP_ADDRESS }}
+          username: ${{ secrets.WEB_01_HOST }}
+          key: ${{ secrets.WEB_01_SSHKEY }}
+          script: |
+            docker pull missnoel9/weather-app:latest
+            docker stop weather-app || true
+            docker rm weather-app || true
+            docker run -d -p 8080:8080 --name weather-app missnoel9/weather-app:latest
