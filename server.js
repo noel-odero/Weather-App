@@ -33,6 +33,6 @@ app.post('/weather', (req, res) => {
 
 });
 
-app.listen(port, () => {
+app.listen(port, "0.0.0.0", () => {
   console.log(`server is listening on ${port}`);
 });
