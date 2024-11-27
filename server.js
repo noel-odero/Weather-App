@@ -28,7 +28,7 @@ app.post('/weather', (req, res) => {
     .then((data) => {
       console.log(res.json(data.data));
     })
-    .catch((err) => console.log(`an unexpected error happened ${err}`));
+    .catch((err) => console.log(`An unexpected error happened ${err}`));
   // this will send a json version of our data, back to the script.js
 
 });
