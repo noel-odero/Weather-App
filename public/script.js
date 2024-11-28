@@ -64,7 +64,7 @@ function setWeatherData(data, place) {
   // temperatureElt.textContent = data.main.temp;
   temperatureElt.textContent = `${(data.main.temp - 273.15).toFixed(2)}°C`;
   precipitationElt.textContent = `${data.main.humidity}%`;
-  windElt.textContent = `${data.wind.speed} m/s`;;
+  windElt.textContent = `${data.wind.speed} m/s`;
   icon.set('icon', weatherMapping[iconKey]);
   icon.play();
 }
