@@ -60,10 +60,11 @@ function setWeatherData(data, place) {
 
   const iconKey = data.weather[0].id;
   locationElt.textContent = place;
-  statusElt.textContent = data.weather.description;
-  temperatureElt.textContent = data.main.temp;
-  precipitationElt.textContent = data.main.humidity;
-  windElt.textContent = data.wind.speed;
+  statusElt.textContent = data.weather[0].description;
+  // temperatureElt.textContent = data.main.temp;
+  temperatureElt.textContent = `${(data.main.temp - 273.15).toFixed(2)}°C`;
+  precipitationElt.textContent = `${data.main.humidity}%`;
+  windElt.textContent = `${data.wind.speed} m/s`;;
   icon.set('icon', weatherMapping[iconKey]);
   icon.play();
 }
