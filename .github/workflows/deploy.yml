@@ -36,3 +36,19 @@ jobs:
             sudo docker stop weather-app || true
             sudo docker rm weather-app || true
             sudo docker run -d -p 3000:3000 --name weather-app missnoel9/weather-app:latest
+
+
+deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: SSH to Ubuntu Server and Deploy
+        uses: appleboy/ssh-action@v0.1.6
+        with:
+          host: ${{ secrets.WEB_02_IP_ADDRESS }}
+          username: ${{ secrets.WEB_01_HOST }}
+          key: ${{ secrets.WEB_02_PRIVATE_KEY }}
+          script: |
+            sudo docker pull missnoel9/weather-app:latest
+            sudo docker stop weather-app || true
+            sudo docker rm weather-app || true
+            sudo docker run -d -p 3000:3000 --name weather-app missnoel9/weather-app:latest
