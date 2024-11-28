@@ -50,4 +50,6 @@ jobs:
             sudo docker rm weather-app || true
             sudo docker run -d -p 3000:3000 --name weather-app missnoel9/weather-app:latest
 
+          # sudo systemctl status docker
+
 
