@@ -24,11 +24,11 @@ A simple and intuitive weather application that allows users to search for locat
 
 ### **Search and Results**
 Users can type in a location to receive accurate weather data.
-![Search and Results](./weather.png)
+![Search and Results](./search'.png)
 
 ### **Dynamic Weather Icons**
 Icons change based on real-time weather conditions.
-![Weather Icons](./weather.png)
+![Weather Icons](./skycons.png)
 
 ---
 
@@ -125,7 +125,7 @@ Contributions are welcome! To contribute:
   - [Google Maps/Places API](https://developers.google.com/maps/documentation)
   - [OpenWeatherMap API](https://openweathermap.org/api)
 - **Icons**: [Skycons](https://github.com/darkskyapp/skycons)
-- **Inspiration**: Tutorials and resources from [MDN Web Docs](https://developer.mozilla.org/).
+
 
 ---
 
