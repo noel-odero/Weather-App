@@ -24,11 +24,11 @@ A simple and intuitive weather application that allows users to search for locat
 
 ### **Search and Results**
 Users can type in a location to receive accurate weather data.
-![Search and Results](https://via.placeholder.com/800x400)
+![Search and Results](./weather.png)
 
 ### **Dynamic Weather Icons**
 Icons change based on real-time weather conditions.
-![Weather Icons](https://via.placeholder.com/800x400)
+![Weather Icons](./weather.png)
 
 ---
 
