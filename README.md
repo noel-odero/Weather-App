@@ -19,6 +19,8 @@ A simple and intuitive weather application that allows users to search for locat
 ---
 
 ## 📷 Screenshots
+![Alt Text](./weather.png)
+
 
 ### **Search and Results**
 Users can type in a location to receive accurate weather data.
@@ -131,4 +133,3 @@ Contributions are welcome! To contribute:
 This project is licensed under the [MIT License](LICENSE).
 ```
 
-Now the "Install Dependencies" section is detailed and ensures clarity, covering all possible steps and packages needed. Let me know if anything else is missing! 😊
