@@ -52,7 +52,7 @@ Follow these steps to install and run the application on your machine:
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/yourusername/weather-app.git
+   git clone https://github.com/noel-odero/weather-app.git
    cd weather-app
    ```
 
@@ -119,7 +119,7 @@ Both tasks required learning new tools and debugging configurations, but they we
 Contributions are welcome! To contribute:
 1. Fork the repository:
    ```bash
-   git fork https://github.com/yourusername/weather-app.git
+   git fork https://github.com/noel-odero/weather-app.git
    ```
 2. Create a feature branch:
    ```bash
