@@ -97,6 +97,23 @@ To deploy the application:
 
 ---
 
+## 🚧 Challenges Faced
+
+### 1. Configuring Nginx to Serve the New Folder
+One of the significant challenges during development was configuring **Nginx** to serve the newly created project folder. Ensuring the web server correctly pointed to the project’s build directory required careful adjustments to the Nginx configuration file. Key tasks included:
+- Setting the `root` directive to point to the correct folder.
+- Ensuring proper permissions for the folder.
+- Testing the configuration to avoid downtime during deployment.
+
+### 2. Automating Deployment to Reflect Changes After Every Push
+Another challenge was automating the deployment process so that the website updates seamlessly after every code push. This involved:
+- Setting up a  CI/CD pipeline to pull the latest changes on the server.
+- Ensuring that the build process ran smoothly on the server.
+- Restarting the necessary services like Nginx without causing interruptions.
+
+Both tasks required learning new tools and debugging configurations, but they were ultimately rewarding as they streamlined the deployment process and made updates more efficient.
+
+
 ## 🤝 Contributing
 
 Contributions are welcome! To contribute:
