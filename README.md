@@ -113,30 +113,6 @@ Another challenge was automating the deployment process so that the website upda
 
 Both tasks required learning new tools and debugging configurations, but they were ultimately rewarding as they streamlined the deployment process and made updates more efficient.
 
-
-## 🤝 Contributing
-
-Contributions are welcome! To contribute:
-1. Fork the repository:
-   ```bash
-   git fork https://github.com/noel-odero/weather-app.git
-   ```
-2. Create a feature branch:
-   ```bash
-   git checkout -b feature-name
-   ```
-3. Commit your changes:
-   ```bash
-   git commit -m "Add meaningful commit message"
-   ```
-4. Push to your branch:
-   ```bash
-   git push origin feature-name
-   ```
-5. Open a Pull Request to the `main` branch.
-
----
-
 ## 💡 Credits
 - **APIs**:
   - [Google Maps/Places API](https://developers.google.com/maps/documentation)
@@ -146,4 +122,6 @@ Contributions are welcome! To contribute:
 
 ---
 
+## Link to the demo video
 
+[![Watch the Demo](https://img.youtube.com/vi/pQs48TLqx-o/0.jpg)](https://www.youtube.com/watch?v=pQs48TLqx-o)
